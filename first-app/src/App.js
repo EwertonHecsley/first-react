@@ -1,14 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Cards from './Cards';
+import HelloWorld from './HelloWorld';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello World !</h1>
+class App extends React.Component {
+  render() {
 
-      <h3>Meu Primeiro Projeto em React</h3>
-    </div>
-  );
+    return (
+      <>
+        <HelloWorld />
+        <Cards />
+      </>
+    );
+  }
 }
 
 export default App;
